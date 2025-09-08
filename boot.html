@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boot</title>
+	<meta charset=UTF-8>
+	<style>
+		/*  ------THE BULLSHIT------  */
+		#btncontain{
+			display: inline-block;
+			margin-left: 11px;
+		}
+		*{
+			-webkit-user-select: none;
+			user-select: none;
+
+		}
+	</style>
+	<!-- base css -->
+	<link rel="stylesheet" href="scenes.css">
+</head>
+
+<!-- BEGIN HTML -->
+<body class="classic">
+	<scene_bootscreen class="bootSequence">
+		<boot_contain><img id="rhapmiumos_boot" src="boot.gif"></boot_contain>
+	</scene_bootscreen>
+
+	<script type="text/javascript">
+		var loadDurationTime = 8000;
+		z = null;
+
+		startLoading();
+		function startLoading() {
+			bootScreen = document.querySelector("scene_bootscreen");
+			bootScreen.style.display = "flex";
+			z = setTimeout(finishLoading, loadDurationTime);
+		}
+
+		function finishLoading() {
+			window.location.href = "second/index.html";
+		}
+	</script>
+</body>
+</html>
