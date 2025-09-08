@@ -6,4 +6,4 @@ The next-gen RhapmiumOS and development environment with full Linux emulation.
 <h1>RhapmiumOS versions</h1>
 <li>1.0<li>
 <p>Change Wallpaper, Clock PM, Save State or Load State, Dark Mode, Import Files, Import Export, Files, Apps Menu with All Apps, App Store with Installed Apps, Display & Performance, Appearance, Accessibility,
-Privacy & Security, About, Iframe (Browser app) and Mores!</p>
+Privacy & Security, About, iFrame (Browser app) and Mores!</p>
