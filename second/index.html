@@ -1006,6 +1006,12 @@ input:checked + .slider:before {
           <p>Pogo</p>
           <button class="install-btn">Install</button> 
         </div>
+        <div class="app-card" onclick="installApp(&apos;dynaroblox&apos;)">
+          <img src="Assets/DynaRoblox.png" style="width: 64px; height: 64px;">
+          <h3>DynaRoblox</h3>
+          <p>Websim</p>
+          <button class="install-btn">Install</button> 
+        </div>
       </div>
     </div>
   </div>
@@ -2347,7 +2353,10 @@ function installApp(appName) {
           break;
         case 'poppit':
           launcherItem.onclick = () => openGameUrl('https://www.poppit.org/game.php');
-          break;          
+          break;
+        case 'dynaroblox':
+          launcherItem.onclick = () => openGameUrl('https://dynaroblox.on.websim.com/');
+          break;  
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
           break;
