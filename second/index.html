@@ -951,7 +951,13 @@ input:checked + .slider:before {
           <h3>LEGO Island</h3>
           <p>The LEGO Group</p>
           <button class="install-btn">Install</button> 
-        </div>               
+        </div>
+        <div class="app-card" onclick="installApp(&apos;koute&apos;)">
+          <img src="Assets/PinkyNES.png" style="width: 64px; height: 64px;">
+          <h3>PinkyNES</h3>
+          <p>koute</p>
+          <button class="install-btn">Install</button> 
+        </div>          
       </div>
     </div>
   </div>
@@ -2264,6 +2270,9 @@ function installApp(appName) {
       switch (appName) {
         case 'minecraft':
           launcherItem.onclick = () => openGameUrl('https://eaglercraft.com/mc/1.8.8/');
+          break;
+        case 'pinkynes':
+          launcherItem.onclick = () => openGameUrl('https://koute.github.io/pinky-web/');
           break;
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
