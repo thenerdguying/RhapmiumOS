@@ -969,7 +969,19 @@ input:checked + .slider:before {
           <h3>Plants vs. Zombies</h3>
           <p>roblnet13</p>
           <button class="install-btn">Install</button> 
-        </div>       
+        </div>     
+        <div class="app-card" onclick="installApp(&apos;flappybird&apos;)">
+          <img src="Assets/Flappy Bird.png" style="width: 64px; height: 64px;">
+          <h3>Flappy Bird</h3>
+          <p>.Gears</p>
+          <button class="install-btn">Install</button> 
+        </div>   
+        <div class="app-card" onclick="installApp(&apos;gamesnacks&apos;)">
+          <img src="Assets/GameSnacks.png" style="width: 64px; height: 64px;">
+          <h3>GameSnacks</h3>
+          <p>Ungoogled for Developers</p>
+          <button class="install-btn">Install</button> 
+        </div>     
       </div>
     </div>
   </div>
@@ -2288,7 +2300,13 @@ function installApp(appName) {
           break;
         case 'doom':
           launcherItem.onclick = () => openGameUrl('https://ustymukhman.github.io/webDOOM/public/');
-          break;    
+          break; 
+        case 'flappybird':
+          launcherItem.onclick = () => openGameUrl('https://flappy-bird-web.appspot.com/');
+          break;
+        case 'gamesnacks':
+          launcherItem.onclick = () => openGameUrl('https://gamesnacks.com/');
+          break;
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
           break;
