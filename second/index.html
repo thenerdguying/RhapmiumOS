@@ -2336,6 +2336,18 @@ function installApp(appName) {
         case 'mine':
           launcherItem.onclick = () => openGameUrl('https://googlminesweeper.com/game/index.html');
           break;
+        case 'halflife':
+          launcherItem.onclick = () => openGameUrl('https://x8bitrain.github.io/webXash/');
+          break;
+        case 'pman':
+          launcherItem.onclick = () => openGameUrl('https://masonicgit.github.io/pacman/');
+          break;
+        case 'entanglement':
+          launcherItem.onclick = () => openGameUrl('https://entanglement.gopherwoodstudios.com/en-US-index.html');
+          break;
+        case 'poppit':
+          launcherItem.onclick = () => openGameUrl('https://www.poppit.org/game.php');
+          break;          
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
           break;
@@ -2362,18 +2374,6 @@ function installApp(appName) {
           break;  
         case 'ruffleplayer':
           launcherItem.onclick = () => openAppUrl('https://thenerdguying.github.io/Ruffle-Player/');
-          break;
-        case 'halflife':
-          launcherItem.onclick = () => openAppUrl('https://x8bitrain.github.io/webXash/');
-          break;
-        case 'pman':
-          launcherItem.onclick = () => openGameUrl('https://worldsbiggestpacman.com/play/');
-          break;
-        case 'entanglement':
-          launcherItem.onclick = () => openGameUrl('https://entanglement.gopherwoodstudios.com/en-US-index.html');
-          break;
-        case 'poppit':
-          launcherItem.onclick = () => openGameUrl('https://www.poppit.org/game.php');
           break;
         default:
           launcherItem.onclick = () => toggleApp(appName);
