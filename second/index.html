@@ -946,10 +946,10 @@ input:checked + .slider:before {
           <p>x8BitRain</p>
           <button class="install-btn">Install</button> 
         </div> 
-        <div class="app-card" onclick="installApp(&apos;islepizza&apos;)">
-          <img src="Assets/LEGO Island.png" style="width: 64px; height: 64px;">
-          <h3>LEGO Island</h3>
-          <p>The LEGO Group</p>
+        <div class="app-card" onclick="installApp(&apos;doom&apos;)">
+          <img src="Assets/Doom.png" style="width: 64px; height: 64px;">
+          <h3>Doom</h3>
+          <p>Ustym Ukhman</p>
           <button class="install-btn">Install</button> 
         </div>
         <div class="app-card" onclick="installApp(&apos;pinkynes&apos;)">
@@ -2285,6 +2285,9 @@ function installApp(appName) {
         case 'pvz':
           launcherItem.onclick = () => openGameUrl('https://roblnet13.github.io/pvz/game/iframe.html');
           break;
+        case 'doom':
+          launcherItem.onclick = () => openGameUrl('https://ustymukhman.github.io/webDOOM/public/');
+          break;    
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
           break;
@@ -2314,10 +2317,7 @@ function installApp(appName) {
           break;
         case 'halflife':
           launcherItem.onclick = () => openAppUrl('https://x8bitrain.github.io/webXash/');
-          break; 
-        case 'islepizza':
-          launcherItem.onclick = () => openAppUrl('https://isle.pizza/');
-          break;     
+          break;  
         default:
           launcherItem.onclick = () => toggleApp(appName);
       }
