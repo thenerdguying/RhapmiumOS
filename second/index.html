@@ -987,8 +987,25 @@ input:checked + .slider:before {
           <h3>Minesweeper</h3>
           <p>Ungoogled</p>
           <button class="install-btn">Install</button> 
-        </div>    
-      </div>
+        </div>
+        <div class="app-card" onclick="installApp(&apos;pacman&apos;)">
+          <img src="Assets/PAC-MAN.png" style="width: 64px; height: 64px;">
+          <h3>PAC-MAN</h3>
+          <p>Namco</p>
+          <button class="install-btn">Install</button> 
+        </div>
+        <div class="app-card" onclick="installApp(&apos;entanglement&apos;)">
+          <img src="Assets/Entanglement.png" style="width: 64px; height: 64px;">
+          <h3>Entanglement</h3>
+          <p>Gopherwood Studios</p>
+          <button class="install-btn">Install</button> 
+        </div>
+        <div class="app-card" onclick="installApp(&apos;poppit&apos;)">
+          <img src="Assets/Poppit.png" style="width: 64px; height: 64px;">
+          <h3>Poppit</h3>
+          <p>Pogo</p>
+          <button class="install-btn">Install</button> 
+        </div>
     </div>
   </div>
 
@@ -2317,6 +2334,15 @@ function installApp(appName) {
           break;
         case 'mine':
           launcherItem.onclick = () => openGameUrl('https://googlminesweeper.com/game/index.html');
+          break;
+        case 'pacman':
+          launcherItem.onclick = () => openGameUrl('https://worldsbiggestpacman.com/play/');
+          break;
+        case 'entanglement':
+          launcherItem.onclick = () => openGameUrl('https://entanglement.gopherwoodstudios.com/en-US-index.html');
+          break;
+        case 'poppit':
+          launcherItem.onclick = () => openGameUrl('https://www.poppit.org/game.php');
           break;
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
