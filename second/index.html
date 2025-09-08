@@ -958,6 +958,18 @@ input:checked + .slider:before {
           <p>koute</p>
           <button class="install-btn">Install</button> 
         </div>          
+        <div class="app-card" onclick="installApp(&apos;quake&apos;)">
+          <img src="Assets/Quake.png" style="width: 64px; height: 64px;">
+          <h3>Quake</h3>
+          <p>Triang3l</p>
+          <button class="install-btn">Install</button> 
+        </div>     
+        <div class="app-card" onclick="installApp(&apos;pvsz&apos;)">
+          <img src="Assets/Plants vs. Zombies.png" style="width: 64px; height: 64px;">
+          <h3>Plants vs. Zombies</h3>
+          <p>roblnet13</p>
+          <button class="install-btn">Install</button> 
+        </div>       
       </div>
     </div>
   </div>
@@ -2266,6 +2278,12 @@ function installApp(appName) {
           break;
         case 'pinkynes':
           launcherItem.onclick = () => openGameUrl('https://koute.github.io/pinky-web/');
+          break;
+        case 'quake':
+          launcherItem.onclick = () => openGameUrl('https://www.netquake.io/');
+          break;
+        case 'pvsz':
+          launcherItem.onclick = () => openGameUrl('https://roblnet13.github.io/pvz/game/iframe.html');
           break;
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
