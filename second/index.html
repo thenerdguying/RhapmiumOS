@@ -988,7 +988,7 @@ input:checked + .slider:before {
           <p>Ungoogled</p>
           <button class="install-btn">Install</button> 
         </div>
-        <div class="app-card" onclick="installApp(&apos;pacman&apos;)">
+        <div class="app-card" onclick="installApp(&apos;pman&apos;)">
           <img src="Assets/PAC-MAN.png" style="width: 64px; height: 64px;">
           <h3>PAC-MAN</h3>
           <p>Namco</p>
@@ -2335,15 +2335,6 @@ function installApp(appName) {
         case 'mine':
           launcherItem.onclick = () => openGameUrl('https://googlminesweeper.com/game/index.html');
           break;
-        case 'pacman':
-          launcherItem.onclick = () => openGameUrl('https://worldsbiggestpacman.com/play/');
-          break;
-        case 'entanglement':
-          launcherItem.onclick = () => openGameUrl('https://entanglement.gopherwoodstudios.com/en-US-index.html');
-          break;
-        case 'poppit':
-          launcherItem.onclick = () => openGameUrl('https://www.poppit.org/game.php');
-          break;
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
           break;
@@ -2373,7 +2364,16 @@ function installApp(appName) {
           break;
         case 'halflife':
           launcherItem.onclick = () => openAppUrl('https://x8bitrain.github.io/webXash/');
-          break;  
+          break;
+        case 'pman':
+          launcherItem.onclick = () => openGameUrl('https://worldsbiggestpacman.com/play/');
+          break;
+        case 'entanglement':
+          launcherItem.onclick = () => openGameUrl('https://entanglement.gopherwoodstudios.com/en-US-index.html');
+          break;
+        case 'poppit':
+          launcherItem.onclick = () => openGameUrl('https://www.poppit.org/game.php');
+          break;
         default:
           launcherItem.onclick = () => toggleApp(appName);
       }
