@@ -1,4 +1,4 @@
-<img src="second/Bonus/OS First Logo.png" alt="RhapmiumOS logo" style="width:400px;height:400px;"></a>
+<img src="second/Bonus/OS First White Logo.png" alt="RhapmiumOS logo" style="width:400px;height:400px;"></a>
 
 The next-gen RhapmiumOS and development environment with full Linux emulation.
 
