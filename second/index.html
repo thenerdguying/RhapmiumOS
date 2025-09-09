@@ -1012,6 +1012,12 @@ input:checked + .slider:before {
           <p>thenerdguying (Websim)</p>
           <button class="install-btn">Install</button> 
         </div>
+        <div class="app-card" onclick="installApp(&apos;slideshow&apos;)">
+          <img src="Assets/Slideshow.png" style="width: 64px; height: 64px;">
+          <h3>Slideshow</h3>
+          <p>Ungoogled</p>
+          <button class="install-btn">Install</button> 
+        </div>
       </div>
     </div>
   </div>
@@ -2383,6 +2389,9 @@ function installApp(appName) {
           break;  
         case 'ruffleplayer':
           launcherItem.onclick = () => openAppUrl('https://thenerdguying.github.io/Ruffle-Player/');
+          break;
+        case 'slideshow':
+          launcherItem.onclick = () => openAppUrl('https://thenerdguying.github.io/Slideshow/');
           break;
         default:
           launcherItem.onclick = () => toggleApp(appName);
