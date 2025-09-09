@@ -1036,6 +1036,11 @@ input:checked + .slider:before {
           <h3>Five Nights at Freddy's 2</h3>
           <p>‎Games</p>
           <button class="install-btn">Install</button> 
+        <div class="app-card" onclick="installApp(&apos;djump&apos;)">
+          <img src="Assets/Doodle Jump.png" style="width: 64px; height: 64px;">
+          <h3>Doodle Jump</h3>
+          <p>‎Games</p>
+          <button class="install-btn">Install</button> 
         </div>
       </div>
     </div>
@@ -2383,6 +2388,9 @@ function installApp(appName) {
           break;
         case 'fnaf2':
           launcherItem.onclick = () => openGameUrl('https://ruihq.github.io/FNAF2/');
+          break;
+        case 'djump':
+          launcherItem.onclick = () => openGameUrl('https://doodlejump.fun/');
           break;
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
