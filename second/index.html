@@ -1024,6 +1024,18 @@ input:checked + .slider:before {
           <p>‎Utilities/Tools</p>
           <button class="install-btn">Install</button> 
         </div>
+        <div class="app-card" onclick="installApp(&apos;fnaf&apos;)">
+          <img src="Assets/Five Nights at Freddy's.png" style="width: 64px; height: 64px;">
+          <h3>Five Nights at Freddy's</h3>
+          <p>Games</p>
+          <button class="install-btn">Install</button> 
+        </div>
+        <div class="app-card" onclick="installApp(&apos;fnaf2&apos;)">
+          <img src="Assets/Five Nights at Freddy's 2.png" style="width: 64px; height: 64px;">
+          <h3>Five Nights at Freddy's 2</h3>
+          <p>‎Games</p>
+          <button class="install-btn">Install</button> 
+        </div>
       </div>
     </div>
   </div>
@@ -2369,6 +2381,12 @@ function installApp(appName) {
         case 'drbeta':
           launcherItem.onclick = () => openGameUrl('https://dynaroblox-beta.on.websim.com/');
           break;  
+        case 'fnaf':
+          launcherItem.onclick = () => openGameUrl('https://dorukyum.github.io/FNAF-Web/');
+          break;
+        case 'fnaf2':
+          launcherItem.onclick = () => openGameUrl('https://ruihq.github.io/FNAF2/');
+          break;
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
           break;
