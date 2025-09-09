@@ -1018,6 +1018,12 @@ input:checked + .slider:before {
           <p>Ungoogled</p>
           <button class="install-btn">Install</button> 
         </div>
+        <div class="app-card" onclick="installApp(&apos;ugmsearch&apos;)">
+          <img src="Assets/Ungoogled Memphis!.png" style="width: 64px; height: 64px;">
+          <h3>Ungoogled Memphis!</h3>
+          <p>Ungoogled</p>
+          <button class="install-btn">Install</button> 
+        </div>
       </div>
     </div>
   </div>
@@ -2392,6 +2398,9 @@ function installApp(appName) {
           break;
         case 'slideshow':
           launcherItem.onclick = () => openAppUrl('https://thenerdguying.github.io/Slideshow/');
+          break;
+        case 'ugmsearch':
+          launcherItem.onclick = () => openAppUrl('https://thenerdguying.github.io/Ungoogled-Memphis/');
           break;
         default:
           launcherItem.onclick = () => toggleApp(appName);
