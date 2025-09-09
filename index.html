@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="Clock/Clock.png">
-    <title>Clock</title>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="OS First Boot Icon.png">
+	<title>Boot</title>
+	<meta charset=UTF-8>
+	<style>
+		/*  ------THE BULLSHIT------  */
+		#btncontain{
+			display: inline-block;
+			margin-left: 11px;
+		}
+		*{
+			-webkit-user-select: none;
+			user-select: none;
 
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="box">
-        <div class="clock">
-          <div class="line hour"></div>
-          <div class="line minute"></div>
-          <div class="line second"></div>
-          <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+		}
+	</style>
+	<!-- base css -->
+	<link rel="stylesheet" href="scenes.css">
+</head>
+
+<!-- BEGIN HTML -->
+<body class="modern">
+	<scene_bootscreen class="bootSequence">
+		<boot_contain><img id="rhapmium_os" src="boot.gif"></boot_contain>
+	</scene_bootscreen>
+
+	<script type="text/javascript">
+		var loadDurationTime = 8000;
+		z = null;
+
+		startLoading();
+		function startLoading() {
+			bootScreen = document.querySelector("scene_bootscreen");
+			bootScreen.style.display = "flex";
+			z = setTimeout(finishLoading, loadDurationTime);
+		}
+
+		function finishLoading() {
+			window.location.href = "second/index.html";
+		}
+	</script>
+</body>
 </html>
