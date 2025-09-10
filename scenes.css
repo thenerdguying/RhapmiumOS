@@ -189,11 +189,11 @@ scene_bootscreen{
 	overflow: hidden;
 	cursor: none;
 }
-scene_bootscreen boot_contain{
-	width: 100vw;
-	height: 180vh;
-	animation: fadeIn 1s 1 steps(8, jump-both);
-	overflow: hidden;
+scene_bootscreen boot_contain {
+    width: 100vw;
+    height: 180vh;
+    animation: fadeIn 1s 1 steps(8, jump-both);
+    overflow: hidden;
 }
 scene_bootscreen boot_contain #rhapboot_os{
 	width:100%;
