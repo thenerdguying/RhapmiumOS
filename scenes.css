@@ -190,7 +190,7 @@ scene_bootscreen{
 	cursor: none;
 }
 scene_bootscreen boot_contain {
-    width: 100vw;
+    width: 80vw;
     height: 180vh;
     animation: fadeIn 1s 1 steps(8, jump-both);
     overflow: hidden;
