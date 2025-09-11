@@ -479,7 +479,7 @@ iframe {
 }
 
 .settings-section:hover {
-  background: #cccccc;
+  background: #adacac;
 }
 
 .settings-section.active {
@@ -1039,6 +1039,12 @@ input:checked + .slider:before {
         <div class="app-card" onclick="installApp(&apos;djump&apos;)">
           <img src="Assets/Doodle Jump.png" style="width: 64px; height: 64px;">
           <h3>Doodle Jump</h3>
+          <p>‎Games</p>
+          <button class="install-btn">Install</button>
+        </div>
+        <div class="app-card" onclick="installApp(&apos;doszone&apos;)">
+          <img src="Assets/DOS.Zone.png" style="width: 64px; height: 64px;">
+          <h3>DOS.Zone</h3>
           <p>‎Games</p>
           <button class="install-btn">Install</button>
         </div>
@@ -2408,6 +2414,9 @@ function installApp(appName) {
           break;
         case 'djump':
           launcherItem.onclick = () => openGameUrl('https://erfanbagheri404.github.io/Doodle-Jump/');
+          break;
+        case 'doszone':
+          launcherItem.onclick = () => openGameUrl('https://dos.zone/');
           break;
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
