@@ -15,12 +15,6 @@
 			user-select: none;
 
 		}
-		body {
-    margin: 0;
-    padding: 0;
-    user-select: none;
-    background: #000;
-}
 	</style>
 	<!-- base css -->
 	<link rel="stylesheet" href="scenes.css">
@@ -29,14 +23,11 @@
 <!-- BEGIN HTML -->
 <body class="modern">
 	<scene_bootscreen class="bootSequence">
-		<boot_contain><p style="color: white; background-color: purple; font-family: 'Lucida Console', 'Courier New', monospace;">
-    A fatal exception 0x0000 has occurred at .bsod will be terminated.
-</p><ui>><p style="color: white; background-color: purple;font-family: 'Lucida Console', 'Courier New', <ul><li><p>Please reload this page in your browser using Opera, Safari, Firefox, Chrome, Edge or others! This website will not work without it! by RhapmiumOS (Website)</p>
-    </ul></boot_contain>
+		<boot_contain><img id="rhapmium_bsod_os" src="bsod.png"></boot_contain>
 	</scene_bootscreen>
 
 	<script type="text/javascript">
-		var loadDurationTime = 9000;
+		var loadDurationTime = 8000;
 		z = null;
 
 		startLoading();
