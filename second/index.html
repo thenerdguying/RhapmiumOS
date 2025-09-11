@@ -227,7 +227,7 @@ iframe {
 .export-btn {
   background: transparent;
   border: none; 
-  color: #adacac;
+  color: #000000;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1475,6 +1475,10 @@ input:checked + .slider:before {
       <img src="Assets/Music Player.png" class="launcher-icon">
       Music Player
     </div>
+    <div class="launcher-item" onclick="backgroundColor()">
+      <img src="Assets/Change Wallpaper.png" class="launcher-icon">
+      Change Background Color
+    </div>
   </div>
   <div class="save-load">
    <button onclick="saveState()">Save State</button>
@@ -1984,6 +1988,23 @@ function changeWallpaper() {
   } else {
     desktop.style.backgroundImage = `url('${wallpapers[nextIndex]}')`;
     desktop.style.backgroundColor = 'initial';
+  }
+}
+function changebackgroundColor() {
+  const backgroundColor = ['008080' '#ff3000' '#0c8b45' '#000e80' '#ffe502' 'none'];
+  const desktop = document.querySelector('.desktop');
+  const currentBg = desktop.style.backgroundColor;
+  let nextIndex = 0;
+  if (currentBg) {
+    const currentUrl = currentBg.match(/url\(['"]?(.*?)['"]?\)/)?.[1] || 'none';
+    nextIndex = (backgroundColor.indexOf(currentUrl) + 1) % backgroundColor.length;
+  }
+  if (backgroundColor[nextIndex] === 'none') {
+    desktop.style.backgroundImage = 'none';
+    desktop.style.backgroundColor = '#000000';
+  } else {
+    desktop.style.backgroundImage = 'initial';
+    desktop.style.backgroundColor = `url('${backgroundColor[nextIndex]}')`;
   }
 }
 function browserGoBack() {
