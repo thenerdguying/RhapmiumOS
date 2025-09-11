@@ -1049,6 +1049,12 @@ input:checked + .slider:before {
           <p>‎Games</p>
           <button class="install-btn">Install</button>
         </div>
+        <div class="app-card" onclick="installApp(&apos;navigator&apos;)">
+          <img src="Assets/OldNetNavigator.png" style="width: 64px; height: 64px;">
+          <h3>OldNetNavigator</h3>
+          <p>‎Communication</p>
+          <button class="install-btn">Install</button>
+        </div>
       </div>
     </div>
   </div>
@@ -2451,6 +2457,9 @@ function installApp(appName) {
           break;
         case 'ugmsearch':
           launcherItem.onclick = () => openAppUrl('https://thenerdguying.github.io/Ungoogled-Memphis/');
+          break;
+        case 'navigator':
+          launcherItem.onclick = () => openAppUrl('https://theoldnet.com/browser/');
           break;
         default:
           launcherItem.onclick = () => toggleApp(appName);
