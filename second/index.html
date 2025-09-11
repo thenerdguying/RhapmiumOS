@@ -2528,7 +2528,7 @@ function executeCommand(command) {
       writeToTerminal('Available commands:\n' + 'clear - Clear terminal output\n' + 'echo [text] - Display text\n' + 'ls - List directory contents\n' + 'cd [dir] - Change directory\n' + 'pwd - Print working directory\n' + 'date - Show current date/time\n' + 'whoami - Show current user\n' + 'help - Show this help message');
       break;
     case 'bsod':
-      window.location.href = '/second/bsod.html';
+      window.location.href = 'bsod.html';
       break;
     default:
       writeToTerminal(`bash: ${cmd}: command not found`);
