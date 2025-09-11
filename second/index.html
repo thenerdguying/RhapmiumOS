@@ -1168,8 +1168,9 @@ input:checked + .slider:before {
               <div class="settings-description" w-tid="351">Change the overall look of your system</div>
             </div>
             <select onchange="setSystemTheme(this.value)" class="settings-select" w-tid="353">
-              <option value="light" w-tid="355">Light</option>
               <option value="dark" w-tid="357">Dark</option>
+              <option value="default" w-tid="356">Default</option>
+              <option value="light" w-tid="355">Light</option>
             </select>
           </div>
 
@@ -2048,9 +2049,12 @@ function setResolutionScale(scale) {
   document.body.style.transformOrigin = 'center top';
 }
 function setSystemTheme(theme) {
-  if (theme === 'dark') {
+  if (theme === 'default') {
     document.body.style.background = '#333';
     document.querySelector('.taskbar').style.background = '#222';
+  } else {
+    document.body.style.background = '#bdbdbd';
+    document.querySelector('.taskbar').style.background = '#bbbcbd';
   } else {
     document.body.style.background = '#fff';
     document.querySelector('.taskbar').style.background = '#f0f0f0';
