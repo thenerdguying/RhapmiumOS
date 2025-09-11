@@ -1042,9 +1042,9 @@ input:checked + .slider:before {
           <p>‎Games</p>
           <button class="install-btn">Install</button>
         </div>
-        <div class="app-card" onclick="installApp(&apos;jssms&apos;)">
-          <img src="Assets/jsSMS.png" style="width: 64px; height: 64px;">
-          <h3>jsSMS</h3>
+        <div class="app-card" onclick="installApp(&apos;scummvm&apos;)">
+          <img src="Assets/ScummVM.png" style="width: 64px; height: 64px;">
+          <h3>ScummVM</h3>
           <p>‎Games</p>
           <button class="install-btn">Install</button>
         </div>
@@ -2415,8 +2415,8 @@ function installApp(appName) {
         case 'djump':
           launcherItem.onclick = () => openGameUrl('https://erfanbagheri404.github.io/Doodle-Jump/');
           break;
-        case 'jssms':
-          launcherItem.onclick = () => openGameUrl('https://gmarty.github.io/jsSMS/');
+        case 'scummvm':
+          launcherItem.onclick = () => openGameUrl('http://scummvm.kuendig.io/');
           break;
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
@@ -2591,7 +2591,7 @@ function savePainting() {
   const canvas = document.getElementById('paint-canvas');
   const dataUrl = canvas.toDataURL();
   const link = document.createElement('a');
-  link.download = 'painting.png';
+  link.download = 'Assets/Files/image.png';
   link.href = dataUrl;
   link.click();
 }
