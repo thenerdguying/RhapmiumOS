@@ -15,6 +15,27 @@
 			user-select: none;
 
 		}
+</head>
+<body class="modern">
+	<scene_bootscreen class="bootSequence">
+		<boot_contain><img id="rhapmium_os" src="Bonus/bsod.png"></boot_contain>
+	</scene_bootscreen>
+
+	<script type="text/javascript">
+		var loadDurationTime = 8000;
+		z = null;
+
+		startLoading();
+		function startLoading() {
+			bootScreen = document.querySelector("scene_bootscreen");
+			bootScreen.style.display = "flex";
+			z = setTimeout(finishLoading, loadDurationTime);
+		}
+
+		function finishLoading() {
+			window.location.href = "index.html";
+		}
+	</script>
 	<style>
 		body{
 	margin: 0;
@@ -150,7 +171,7 @@ scene_sysconfig hr{
 }
 scene_sysconfig #devicetable{
 	margin: 0 5px;
-	border:1px solid #000;
+	border:1px solid #000000;
 	box-shadow: 
 	inset 2px 0 var(--bios), inset -2px 0 var(--bios),inset 0 1px var(--bios), inset 0 -1px var(--bios),
 	1px 0 0 1px var(--bios), -1px 0 0 1px var(--bios), 0 1px var(--bios), 0 -1px var(--bios);
@@ -203,13 +224,13 @@ scene_bootscreen{
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-	height: 100vh;
+	height: 120vh;
 	overflow: hidden;
 	cursor: none;
 }
 scene_bootscreen boot_contain {
-    width: 80vw;
-    height: 180vh;
+    width: 100vw;
+    height: 120vh;
     animation: fadeIn 1s 1 steps(8, jump-both);
     overflow: hidden;
 }
@@ -306,28 +327,5 @@ scene_bootscreen boot_contain #mslogo{
 	float: right;
 	margin-right: 21px;
 	</style>
-</head>
-
-<!-- BEGIN HTML -->
-<body class="modern">
-	<scene_bootscreen class="bootSequence">
-		<boot_contain><img id="rhapmium_os" src="Bonus/bsod.png"></boot_contain>
-	</scene_bootscreen>
-
-	<script type="text/javascript">
-		var loadDurationTime = 8000;
-		z = null;
-
-		startLoading();
-		function startLoading() {
-			bootScreen = document.querySelector("scene_bootscreen");
-			bootScreen.style.display = "flex";
-			z = setTimeout(finishLoading, loadDurationTime);
-		}
-
-		function finishLoading() {
-			window.location.href = "index.html";
-		}
-	</script>
 </body>
 </html>
