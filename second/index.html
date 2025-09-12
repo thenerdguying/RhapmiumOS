@@ -1062,6 +1062,18 @@ input:checked + .slider:before {
           <p>‎Communication</p>
           <button class="install-btn">Install</button>
         </div>
+        <div class="app-card" onclick="installApp(&apos;diablo&apos;)">
+          <img src="Assets/Diablo.png" style="width: 64px; height: 64px;">
+          <h3>Diablo</h3>
+          <p>Games</p>
+          <button class="install-btn">Install</button>
+        </div>
+        <div class="app-card" onclick="installApp(&apos;princejs&apos;)">
+          <img src="Assets/PrinceJS.png" style="width: 64px; height: 64px;">
+          <h3>PrinceJS</h3>
+          <p>‎Games</p>
+          <button class="install-btn">Install</button>
+        </div>
       </div>
     </div>
   </div>
@@ -1994,7 +2006,7 @@ function changeWallpaper() {
   }
   if (wallpapers[nextIndex] === 'none') {
     desktop.style.backgroundImage = 'none';
-    desktop.style.backgroundColor = '#000000';
+    desktop.style.backgroundColor = '#CBC3E3';
   } else {
     desktop.style.backgroundImage = `url('${wallpapers[nextIndex]}')`;
     desktop.style.backgroundColor = 'initial';
@@ -2431,6 +2443,12 @@ function installApp(appName) {
           break;
         case 'scummvm':
           launcherItem.onclick = () => openGameUrl('https://scummvm.kuendig.io/');
+          break;
+        case 'diablo':
+          launcherItem.onclick = () => openGameUrl('https://d07riv.github.io/diabloweb/');
+          break;
+        case 'princejs':
+          launcherItem.onclick = () => openGameUrl('https://princejs.com/');
           break;
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
