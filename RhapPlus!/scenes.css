@@ -19,7 +19,7 @@ body.zoomed scene_desktop{
 
 @font-face {
     font-family: 'vga8x14';
-    src: url('Perfect DOS VGA 437.ttf');
+    src: url('https://thenerdguying.github.io/RhapmiumOS/RhapPlus!/Perfect DOS VGA 437.ttf');
 }
 
 scene_bios, scene_sysconfig{
