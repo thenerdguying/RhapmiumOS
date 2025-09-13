@@ -2635,7 +2635,7 @@ function savePainting() {
   const canvas = document.getElementById('paint-canvas');
   const dataUrl = canvas.toDataURL();
   const link = document.createElement('a');
-  link.download = 'Assets/Files/image.png';
+  link.download = 'Assets/Files/painting.png';
   link.href = dataUrl;
   link.click();
 }
