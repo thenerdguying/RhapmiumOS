@@ -1074,6 +1074,12 @@ input:checked + .slider:before {
           <p>‎Games</p>
           <button class="install-btn">Install</button>
         </div>
+        <div class="app-card" onclick="installApp(&apos;rplus&apos;)">
+          <img src="Assets/RhapPlus!.png" style="width: 64px; height: 64px;">
+          <h3>RhapPlus!</h3>
+          <p>‎Utilities/Tools</p>
+          <button class="install-btn">Install</button>
+        </div>
       </div>
     </div>
   </div>
@@ -2485,6 +2491,9 @@ function installApp(appName) {
           break;
         case 'navigator':
           launcherItem.onclick = () => openAppUrl('https://theoldnet.com/browser/');
+          break;
+        case 'rplus':
+          window.location.href = '/';
           break;
         default:
           launcherItem.onclick = () => toggleApp(appName);
