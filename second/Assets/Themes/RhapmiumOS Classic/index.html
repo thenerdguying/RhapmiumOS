@@ -738,18 +738,18 @@ input:checked + .slider:before {
 
 .terminal-input-line {
   display: flex;
-  color: #0F0;
+  color: #FFF;
 }
 
 .terminal-prompt {
-  color: #0F0;
+  color: #FFF;
   margin-right: 8px;
 }
 
 .terminal-input {
   background: transparent;
   border: none;
-  color: #0F0;
+  color: #FFF;
   font-family: monospace;
   flex: 1;
   outline: none;
@@ -2003,7 +2003,7 @@ function toggleDarkMode() {
   }
 }
 function changeWallpaper() {
-  const wallpapers = ['Assets/Wallpapers/Wallpaper.jpg', 'Assets/Wallpapers/Clouds.jpg', 'none'];
+  const wallpapers = ['Assets/Wallpapers/Wallpaper.jpg', 'Assets/Wallpapers/Clouds.jpg', 'Assets/Wallpapers/Bubbles.jpg', 'Assets/Wallpapers/BlueRivets.jpg', 'Assets/Wallpapers/Waves.jpg', 'Assets/Wallpapers/Setup.jpg', 'Assets/Wallpapers/GoldWeave.jpg', 'Assets/Wallpapers/Triangles.jpg', 'Assets/Wallpapers/Sandstone.jpg', 'Assets/Wallpapers/Stitches.jpg', 'Assets/Wallpapers/Houndstooth.jpg', 'Assets/Wallpapers/MetalLinks.jpg', 'Assets/Wallpapers/StrawMat.jpg', 'Assets/Wallpapers/Tiles.jpg', 'Assets/Wallpapers/Blocks.jpg', 'Assets/Wallpapers/Forest.jpg', 'Assets/Wallpapers/Pinstripe.jpg', 'Assets/Wallpapers/BlackThatch.jpg', 'none'];
   const desktop = document.querySelector('.desktop');
   const currentBg = desktop.style.backgroundImage;
   let nextIndex = 0;
