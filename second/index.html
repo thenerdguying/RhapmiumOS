@@ -2456,6 +2456,9 @@ function installApp(appName) {
         case 'princejs':
           launcherItem.onclick = () => openGameUrl('https://princejs.com/');
           break;
+        case 'gorescript':
+          launcherItem.onclick = () => openGameUrl('https://gorescript.github.io/classic/play/');
+          break; 
         case 'chromehead':
           launcherItem.onclick = () => openAppUrl('https://browser.rammerhead.org/');
           break;
@@ -2491,9 +2494,6 @@ function installApp(appName) {
           break;
         case 'navigator':
           launcherItem.onclick = () => openAppUrl('https://theoldnet.com/browser/');
-          break;
-        case 'gorescript':
-          window.location.href = 'https://gorescript.github.io/classic/play/';
           break;
         default:
           launcherItem.onclick = () => toggleApp(appName);
